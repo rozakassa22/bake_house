@@ -1,0 +1,52 @@
+/* CustomSlider.css */
+
+.slick-dots.custom-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .slick-dots.custom-dots li {
+    width: auto;
+    margin: 0 5px;
+  }
+  
+  .slick-dots.custom-dots li button {
+    padding: 0;
+  }
+  
+  .custom-dot {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-dot .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    display: block;
+    margin: 0 5px;
+  }
+  
+  .slick-dots.custom-dots li.slick-active .dot {
+    background-color: #e87b7b; /* The active dot color */
+    width: 24px; /* Longer horizontal bar for active dot */
+    height: 8px; /* Maintain height for active dot */
+    border-radius: 8px; /* Ensure active dot is rounded */
+    transition: width 0.3s ease; /* Smooth transition for dot resizing */
+  }
+  
+  .custom-arrow-outside {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    .custom-arrow.custom-arrow-left,
+    .custom-arrow.custom-arrow-right {
+      position: static;
+      transform: none;
+      margin: 0 10px;
+    }
+  }
